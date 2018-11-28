@@ -2,17 +2,17 @@
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const uncss = require("postcss-uncss");
-const cleanCSS = require("gulp-clean-css");
+//The line below merges css files
+const concatCss = require("gulp-concat-css");
 
 //Defines a new task and runs function when task is executed
 gulp.task("remove-css", function() {
 	//SRC is the folder where gulp grabs files to process
 	//*.CSS processes all files within folder with the extension CSS
-	gulp.src("./css2/*.css")
+	gulp.src(["css/normalize.css", "css/webflow.css", "css/boom-app.webflow.css"])
+	.pipe(concatCss("newcss.css"))
 	//line betlow copied from https://www.npmjs.com/package/gulp-uncss
 	.pipe(postcss([uncss({html: "index.html"})]))
-	//https://www.npmjs.com/package/gulp-clean-css to minify CSS
-	.pipe(cleanCSS({compatibility: 'ie8'}))
 	//Destination defines where processed files are created/transferred
 	//Pipe used to run any kind of function on source file
 	.pipe(gulp.dest("css2"))
