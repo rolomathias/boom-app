@@ -3,6 +3,4 @@ Boom app marketing site for Swedish housing valuation
 
 Needs:
 
-Proper linking of facebook and twitter preview images cited in head of index.html /
-email form connect to service /
-link attributes for cookie policy, contact us buttons, app download / update email address in <div class="error-message w-form-fail">
+Add links for the following in the footer: cooking policy, facebook and email icons................... Find solution for email input form to capture for iOS launch notification
