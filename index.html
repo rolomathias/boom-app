@@ -1,62 +1,56 @@
 <!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Tue Jan 22 2019 14:03:34 GMT+0000 (UTC)  -->
 <html data-wf-page="5be84759f904b3f8079bf6a5" data-wf-site="5be84759f904b34e619bf6a4">
 <head>
   <meta charset="utf-8">
   <title>Boom App, Bostadsvärderingar.</title>
-  <meta content="Är du intresserad av att veta värdet på din bostad? Boom hjälper dig att hålla koll. Här kan du även se över ditt bolån, komma i kontakt med mäklare samt se över ditt elavtal." name="Svensk bostadsvärderingar app">
-  <!-- @Change: Make max zoom to 1 and make site not scalable by user -->
-  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
-  <link href="css2/newcss.css" rel="stylesheet" type="text/css">
+  <meta content="Är du intresserad av att veta värdet på din bostad? Boom hjälper dig att hålla koll. Här kan du även se över ditt bolån, komma i kontakt med mäklare samt se över ditt elavtal." name="description">
+  <meta content="Boom App, Bostadsvärderingar." property="og:title">
+  <meta content="Är du intresserad av att veta värdet på din bostad? Boom hjälper dig att hålla koll. Här kan du även se över ditt bolån, komma i kontakt med mäklare samt se över ditt elavtal." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/5be84759f904b34e619bf6a4/5c193d59a8594b2e3c8beb17_facebook-preview.png" property="og:image">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/boom-app.webflow.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Fira Sans:regular,600,700,800,900","Fira Sans:300,regular"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-
-  <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
-  <meta property="og:title" content="Boom App, Bostadsvärderingar.">
-  <meta property="og:description"
-        content="Är du intresserad av att veta värdet på din bostad? Boom hjälper dig att hålla koll. Här kan du även se över ditt bolån, komma i kontakt med mäklare samt se över ditt elavtal.">
-  <meta property="og:image" content="https://boomapp.se/images/facebook-preview.png">
-  <meta property="og:url" content="https://boomapp.se">
-
-  <meta name="twitter:title" content="Boom App, Bostadsvärderingar.">
-  <meta name="twitter:description"
-        content="Är du intresserad av att veta värdet på din bostad? Boom hjälper dig att hålla koll. Här kan du även se över ditt bolån, komma i kontakt med mäklare samt se över ditt elavtal.">
-  <meta name="twitter:image" content="https://boomapp.se/images/twitter-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
-  
+  <link href="images/app-icon-square_1.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/app-icon-square.png" rel="apple-touch-icon">
+  <style>
+div.footer-elements .ios-cta:hover .popup {
+opacity: 1;
+transition: opacity 350ms ease;
+}
+</style>
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
 </head>
 <body class="body">
   <div class="hero-section">
-    <div class="width-container">
-      <div class="left-hero"><img src="images/Boom-logo.svg" width="32" alt="Boom logo" class="image-4">
-        <div class="hero-text-container">
-          <div class="labels">Välkommen till <span class="text-span">boom app</span> 👋</div>
-          <h1 class="heading-2">Vi vet värdet på din bostad. Vet du?</h1>
-          <p class="paragraph">Boom är en app som hjälper dig få bättre koll på ditt bostadsvärde. Vi samlar flera värderingar från leverantörer och tar fram ett snittvärde. Detta ger dig inblick i hur värdet på din bostad ser ut. Att använda Boom är kostnadsfritt.</p>
-        </div>
-        <div class="cta-container">
-          <div class="cta"><img src="images/google-play-badge.svg" alt="" class="android"></div>
-          <div class="ios-cta"><img src="images/ios-comingsoon.svg" alt="" class="ios">
-            <div data-w-id="a7323bed-01f0-be7c-cf26-61acef144529" style="opacity:0;display:none" class="popup"><img src="images/ios-popup.svg" alt="" class="popup-svg"></div>
-          </div>
-        </div>
-        <div class="form-container"><img src="images/icon-alert.svg" width="48" alt="" class="image-7">
-          <div class="input-label">Var först med att få reda på när vi <br class="hide-desktop">lanserar för iOS!</div>
-        </div>
-        <div class="input-container">
-          <div class="form-block w-form">
-            <form id="wf-form-email-capture" name="wf-form-email-capture" data-name="email capture" class="form"><input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="E-mail" id="email" required=""><input type="submit" value="notifiera" data-wait="Please wait..." class="submit-button w-button"></form>
-            <div class="success-message w-form-done">
-              <div class="text-block">Thank you! We&#x27;ll notify you when we realease the iOS app!</div>
-            </div>
-            <div class="error-message w-form-fail">
-              <div class="text-block-2">Oops! Something went wrong while submitting the form.<br>Contact us at oscar.jansson@schibsted.com to fix it.</div>
+    <div class="width-container hero">
+      <div class="nav"><img src="images/Boom-logo.svg" width="32" alt="Boom logo" class="image-4"></div>
+      <div class="left-hero">
+        <div class="div-block-3">
+          <div class="hero-text-container">
+            <div class="labels">Välkommen till <span class="text-span">boom app</span> 👋</div>
+            <h1 class="heading-2">Vi vet värdet på din bostad. Vet du?</h1>
+            <p class="paragraph shadow">Boom är en app som hjälper dig få bättre koll på ditt bostadsvärde. Vi samlar flera värderingar från leverantörer och tar fram ett snittvärde. Detta ger dig inblick i hur värdet på din bostad ser ut. Att använda Boom är kostnadsfritt.</p>
+            <div class="cta-container">
+              <a href="#" class="link-block-2 w-inline-block">
+                <div class="cta"><img src="images/google-play-badge.svg" alt="" class="android"></div>
+              </a>
+              <div data-w-id="a1cfc092-1dda-f5ab-4322-5eafee25fffc" class="ios-cta"><img src="images/ios-comingsoon.svg" alt="" class="ios">
+                <div data-w-id="a7323bed-01f0-be7c-cf26-61acef144529" style="opacity:0;display:none" class="popup"><img src="images/ios-popup.svg" alt="" class="popup-svg"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="right-hero"><img src="images/hero-phones.png" alt="Boom mockup" width="526" srcset="images/hero-phones-p-500.png 500w, images/hero-phones.png 574w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 526px, 33vw" data-w-id="359454c7-b958-ba05-c225-12c7e436d1b4" class="image-5"></div>
+      <div class="right-hero"><img src="images/hero-phones.png" alt="Boom mockup" width="526" srcset="images/hero-phones-p-500.png 500w, images/hero-phones.png 574w" sizes="(max-width: 479px) 88vw, (max-width: 767px) 85vw, (max-width: 991px) 68vw, 33vw" data-w-id="359454c7-b958-ba05-c225-12c7e436d1b4" class="image-5"></div>
     </div>
   </div>
   <div class="section-2">
@@ -85,7 +79,7 @@
   <div class="section-3">
     <div class="width-container">
       <div class="s3-container">
-        <div class="s3-image-container"><img src="images/app-screenshots.png" srcset="images/app-screenshots-p-500.png 500w, images/app-screenshots-p-800.png 800w, images/app-screenshots.png 826w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 907px) 91vw, (max-width: 991px) 826px, 50vw" alt="" class="image-9"></div>
+        <div class="s3-image-container"><img src="images/Group-16.png" srcset="images/Group-16.png 500w, images/Group-16.png 762w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 87vw, 54vw" alt="" class="image-16"></div>
         <div class="s3-text-container">
           <h2 class="h2 white">Vi har de rätta verktygen för att hjälpa dig till en bättre bostadsekonomi.</h2>
           <div class="s3-sub-text"><img src="images/arrow-flair.svg" alt="" class="image-8">
@@ -97,35 +91,33 @@
   </div>
   <div class="section-4">
     <div class="width-container">
-      <div class="s4-parent">
-        <div class="left-text-container">
-          <h2 class="heading-3">Vi är kompisar med de bästa i branschen.</h2>
-          <div class="s3-sub-text">
-            <p class="paragraph-3 s4">Vi är kompisar med några utav de företag vi anser är bäst på det dom gör. Några utav våra partners är exempelvis Blocket, Kundkraft, Hypoteket och MittBolån.</p>
+      <div class="left-text-container">
+        <h2 class="heading-3">Vi är kompisar med de bästa i branschen.</h2>
+        <div class="s3-sub-text">
+          <p class="paragraph-3 s4">Vi är kompisar med några utav de företag vi anser är bäst på det dom gör. Några utav våra partners är exempelvis Blocket, Kundkraft, Hypoteket och MittBolån.</p>
+        </div>
+        <div class="list-parent">
+          <div class="list">
+            <div class="icon-container"><img src="images/confirmed.svg" alt="" class="image-10"></div>
+            <div class="text-container">
+              <p class="paragraph-3 s4">Bolån</p>
+            </div>
           </div>
-          <div class="list-parent">
-            <div class="list">
-              <div class="icon-container"><img src="images/confirmed.svg" alt="" class="image-10"></div>
-              <div class="text-container">
-                <p class="paragraph-3 s4">Bolån</p>
-              </div>
+          <div class="list">
+            <div class="icon-container"><img src="images/confirmed.svg" alt="" class="image-10"></div>
+            <div class="text-container">
+              <p class="paragraph-3 s4">Elavtal</p>
             </div>
-            <div class="list">
-              <div class="icon-container"><img src="images/confirmed.svg" alt="" class="image-10"></div>
-              <div class="text-container">
-                <p class="paragraph-3 s4">Elavtal</p>
-              </div>
-            </div>
-            <div class="list">
-              <div class="icon-container"><img src="images/confirmed.svg" alt="" class="image-10"></div>
-              <div class="text-container">
-                <p class="paragraph-3 s4">Bostadsförsäljning</p>
-              </div>
+          </div>
+          <div class="list">
+            <div class="icon-container"><img src="images/confirmed.svg" alt="" class="image-10"></div>
+            <div class="text-container">
+              <p class="paragraph-3 s4">Bostadsförsäljning</p>
             </div>
           </div>
         </div>
-        <div class="s4-right-image-container"><img src="images/s4phones.png" srcset="images/s4phones-p-500.png 500w, images/s4phones-p-800.png 800w, images/s4phones.png 812w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 56vw, 53vw" alt="" class="image-11"></div>
       </div>
+      <div class="s4-right-image-container"><img src="images/Group-14.png" srcset="images/Group-14.png 500w, images/Group-14.png 764w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 54vw, 53vw" alt=""></div>
     </div>
   </div>
   <div class="section-5">
@@ -133,23 +125,11 @@
       <div class="footer-elements">
         <h2 class="heading-4">Testa vår app redan idag! <br>Kostnadsfritt.</h2>
         <div class="cta-container">
-          <div class="cta"><img src="images/google-play-badge.svg" alt="" class="android"></div>
+          <a href="#" class="link-block-2 w-inline-block">
+            <div class="cta"><img src="images/google-play-badge.svg" alt="" class="android"></div>
+          </a>
           <div class="ios-cta"><img src="images/ios-comingsoon.svg" alt="" class="ios">
             <div class="popup"><img src="images/ios-popup.svg" alt="" class="popup-svg"></div>
-          </div>
-        </div>
-        <div class="form-container"><img src="images/icon-alert.svg" width="48" alt="" class="image-7">
-          <div class="input-label">Var först med att få reda på när vi lanserar för iOS!</div>
-        </div>
-        <div class="input-container">
-          <div class="form-block w-form">
-            <form id="wf-form-email-capture" name="wf-form-email-capture" data-name="email capture" class="form"><input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="E-mail" id="email-2" required=""><input type="submit" value="notifiera" data-wait="Please wait..." class="submit-button w-button"></form>
-            <div class="success-message w-form-done">
-              <div class="text-block">Thank you! We&#x27;ll notify you when we realease the iOS app!</div>
-            </div>
-            <div class="error-message w-form-fail">
-              <div class="text-block-2">Oops! Something went wrong while submitting the form.<br>Contact us at oscar.jansson@schibsted.com to fix it.</div>
-            </div>
           </div>
         </div>
         <div class="footer-text">
@@ -157,9 +137,13 @@
           <div class="text-block-3">Frågor? Hojta till, så ser vi till att delge de bästa svaren.</div>
         </div>
         <div class="social-icons-container">
-          <div class="social-icon"><img src="images/email-action-at.svg" alt="" class="image-14"></div>
-          <div class="social-icon"><img src="images/social-media-facebook-1.svg" alt="" class="image-15"></div>
-        </div><a href="#" target="_blank" class="link">Cookie Policy</a>
+          <a href="mailto:support@boomapp.se?subject=Boom%20App" class="link-block w-inline-block">
+            <div class="social-icon"><img src="images/email-action-at.svg" alt="" class="image-14"></div>
+          </a>
+          <a href="https://www.facebook.com/TheBoomApp" target="_blank" class="link-block w-inline-block">
+            <div class="social-icon"><img src="images/social-media-facebook-1.svg" alt="" class="image-15"></div>
+          </a>
+        </div><a href="https://www.boomapp.se/privacy/layer-2/cookies.html" target="_blank" class="link">Cookie Policy</a>
         <div class="brand-elements">
           <div class="logo brand-elements"><img src="images/Boom-logo.svg" alt=""></div>
           <div class="text-block-3">Boom App ©2019</div>
@@ -167,9 +151,8 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
